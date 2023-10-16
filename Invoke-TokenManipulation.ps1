@@ -1820,7 +1820,7 @@ Blog on this script: http://clymb3r.wordpress.com/2013/11/03/powershell-and-toke
             
             #Select the token to use
             [IntPtr]$hToken = [IntPtr]::Zero
-            $UniqueTokens = (Get-UniqueTokens -AllTokens $AllTokens).TokenByUse
+            $UniqueTokens = (Get-UniqueTokens -AllTokens $AllTokens).TokenByUser
 
             if ($Username -ne $null -and $Username -ne '')
             {
